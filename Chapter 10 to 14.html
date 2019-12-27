@@ -1,0 +1,33 @@
+<html>
+    <title>Chapter 10 to 14</title>
+    <head>
+        <script>
+
+          var firstValue = prompt("Enter your first value:");
+          var operation = prompt("Enter any mathematical operation:");
+          var secondValue = prompt("Enter your second value:");
+          
+        
+          if(operation == "+"){
+             var Answer = Number(firstValue) + Number(secondValue)
+              alert(Number(firstValue)+" "+ operation +" " +Number(secondValue)+" = "+Answer);
+          } else if(operation == "-"){
+             var Answer = Number(firstValue) - Number(secondValue)
+              alert(Number(firstValue)+" "+ operation +" " +Number(secondValue)+" = "+Answer);
+          } else if(operation == "*"){
+             var Answer = Number(firstValue) * Number(secondValue)
+              alert(Number(firstValue)+" "+ operation +" " +Number(secondValue)+" = "+Answer);
+          } else if(operation == "/"){
+             var Answer = Number(firstValue) / Number(secondValue)
+              alert(Number(firstValue)+" "+ operation +" " +Number(secondValue)+" = "+Answer);
+          } else if(operation == "%"){
+             var Answer = Number(firstValue) % Number(secondValue)
+              alert(Number(firstValue)+" "+ operation +" " +Number(secondValue)+" = "+Answer);
+          } else{
+              alert("Please enter a valid mathematical operation. \n Thank You!")
+          }
+
+           
+        </script>
+    </head>
+</html>
