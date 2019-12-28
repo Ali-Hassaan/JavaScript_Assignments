@@ -1,0 +1,24 @@
+<html>
+    <title>Chapter 18,19 and 20</title>
+    <head>
+        
+        <script>
+            var courses = ["linux", "docker", "kubernetes", "html & css", "java script"];
+            var search = prompt("Course Name");
+            search = search.toLowerCase();
+            con = false;
+            for (var i = 0; i <=4; i++) {
+                if (search === courses[i]){
+                    con = true;
+                    alert(courses[i]+" "+ "course is available.")
+                    break;
+                } 
+            }
+            if(con === false) {
+                    alert("Sorry!\nWe are not offering course " +search+ "\nThank You!");
+                }
+
+
+        </script>
+      </head>
+</html>
