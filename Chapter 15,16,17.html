@@ -1,0 +1,31 @@
+<html>
+    <title>Chapter 15,16 and 17</title>
+    <head>
+        
+        <script>
+            var courses = [];
+            course1 = prompt("Course 1", "Linux");
+            course2 = prompt("Course 2", "Docker");
+            course3 = prompt("Course 3", "Kubernetes");
+            course4 = prompt("Course 4", "Html & Css");
+            course5 = prompt("Course 5", "Java Script");
+            courses.push(course1);
+            courses.push(course2);
+            courses.push(course3);
+            courses.push(course4);
+            courses.push(course5);
+            alert(courses);
+            course_Edit1 = prompt("course1",course1);
+            course_Edit2 = prompt("course2",course2);
+            course_Edit3 = prompt("course3",course3);
+            course_Edit4 = prompt("course4",course4);
+            course_Edit5 = prompt("course5",course5);
+
+            courses.splice(0,5,course_Edit1, course_Edit2, course_Edit3, course_Edit4, course_Edit5);
+
+            alert(courses);
+
+
+        </script>
+      </head>
+</html>
