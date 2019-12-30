@@ -1,0 +1,49 @@
+<html>
+    <title>Chapter 31 to 34</title>
+    <head>
+        
+        <script>
+            
+           var name = prompt("Enter your name:");
+           var DOB = prompt("Enter your date of birth:");
+           var MOB = prompt("Enter your month of birth:");
+           var YOB = prompt("Enter your year of birth:");
+           var dateGreet = new Date();
+           var hr = dateGreet.getHours();
+           if(hr < 12){
+            console.log("Hello "+name+", Good Morning")
+           } else if(hr >=12 && hr < 17){
+            console.log("Hello "+name+", Good Afternoon")
+           } else if(hr >= 17){
+            console.log("Hello "+name+", Good Evening")
+           }
+            console.log(new Date(MOB+DOB+","+YOB));
+           var birth = new Date(MOB+DOB+","+YOB);
+           var current = new Date();
+           var years = current.getFullYear() - birth.getFullYear();
+           var months = current.getMonth() - birth.getMonth();
+           var days = current.getDate() - birth.getDate();
+           var hours = current.getHours() - birth.getHours();
+           var minute = current.getMinutes() - birth.getMinutes();
+           var seconds = current.getSeconds() - birth.getSeconds();
+           var Diff = current.getTime() - birth.getTime();
+           var daysOld = Diff / (1000 * 60 * 60 * 24);
+           daysOld = Math.floor(daysOld);
+           
+           console.log("You are "+years+" years "+months+" Month "+days+" Days "+hours+" Hours "+minute+" Minute "+seconds+" Seconds old\nYour age in days: "+daysOld);
+           
+           
+           var upComing = new Date(MOB+DOB+",2020")
+           var hoursRem = current.getHours() - upComing.getHours();
+           var minuteRem = current.getMinutes() - upComing.getMinutes();
+           var secondsRem = current.getSeconds() - upComing.getSeconds();
+
+           var Diff2 = upComing.getTime() - current.getTime();
+           var daysRem = Diff2 / (1000 * 60 * 60 * 24);
+           daysRem = Math.floor(daysRem);
+
+           console.log(daysRem+" Days "+hoursRem+" Hours "+minuteRem+" Minutes "+secondsRem+" Seconds left in your next birthday.")
+
+        </script>
+      </head>
+</html>
