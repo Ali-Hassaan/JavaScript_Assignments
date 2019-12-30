@@ -1,0 +1,42 @@
+<html>
+    <title>Chapter 39 to 42</title>
+    <head>
+        
+        <script>
+            var eng = prompt("Your marks in English:");
+            var com = prompt("Your marks in Computer:");
+            var urdu = prompt("Your marks in Urdu:");
+            var science = prompt("Your marks in Science:");
+            var physics = prompt("Your marks in Physics");
+            var obtainedMarks = (Number(eng) + Number(com) + Number(urdu) + Number(science) + Number(physics));
+            var totalMarks = 500;
+            var per = (obtainedMarks * 100 / totalMarks);
+            var per = Math.round(per);
+            
+            switch(true){
+                case per > 100:
+                    alert("Enter correct marks!");
+                    break;
+                case per >=90:
+                    alert("Grade A+,Your percentage is "+per);
+                    break;
+                case per >=75:
+                    alert("Grade A Your percentage is "+per);
+                    break;
+                case per >= 60:
+                    alert("Grade B Your percentage is "+per);
+                    break;
+                case per >= 45:
+                    alert("Grade C Your percentage is "+per);
+                    break;
+                case per >=30:
+                    alert("Grade D Your percentage is "+per);
+                    break;
+                default:
+                    alert("Failed");
+                
+            }
+            
+        </script>
+      </head>
+</html>
